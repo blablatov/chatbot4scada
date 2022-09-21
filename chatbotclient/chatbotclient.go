@@ -65,7 +65,7 @@ func (d ChatData) ChatClient() {
 	}
 }*/
 
-// Func for send data via io.Reader. Func для отправки данных через io.Reader
+// Func for send data via io.Reader. Func для отправки данных через io.Reader.
 func mustCopy(dst io.Writer, src io.Reader) {
 	if _, err := io.Copy(dst, src); err != nil {
 		log.Fatal(err)

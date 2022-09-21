@@ -20,7 +20,7 @@ var (
 )
 
 func broadcaster() {
-	clients := make(map[client]bool) // all connected clients. Все подключенные клиенты
+	clients := make(map[client]bool) // all connected clients. Все подключенные клиенты.
 	for {
 		select {
 		case msg := <-messages:

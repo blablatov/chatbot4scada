@@ -6,8 +6,22 @@
 
 ***Схема обмена данными (scheme exchange of data):***
 
->:two:chatbotclient <---> :one:chatbotserver <---> :two:chatbotclient   
- 			
+
+```mermaid
+graph TB
+
+  SubGraph3 --> SubGraph3Flow
+  subgraph "SCADA Chat"
+  SubGraph3Flow(ChatbotServer)
+  SubGraph3Flow -- Message --> ChatBotClient-1
+  SubGraph3Flow -- Message --> ChatBotClient-2
+  SubGraph3Flow -- Message --> ChatBotClient-3
+  end
+
+  subgraph "SENDER"
+  SubGraph3[Message of broadcast]
+end
+```  			
 
 Для проверки, запустить модуль `chatbotserver` и клиентские модули `chatbotclient`. 
 
