@@ -1,3 +1,4 @@
+[![Go](https://github.com/blablatov/chatbot4scada/actions/workflows/chatbot4scada-action.yml/badge.svg)](https://github.com/blablatov/chatbot4scada/actions/workflows/chatbot4scada-action.yml)
 ## scada
 ### RU
 
